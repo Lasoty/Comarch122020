@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="37209eb2-cce5-4f0d-b75a-a78dd29f0a5c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:54575/MojServis.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MojServis.xsd" MetadataType="Schema" ID="cb92a489-2ac9-4927-973f-343a1ebd608a" SourceId="1" SourceUrl="http://localhost:54575/MojServis.svc?xsd=xsd0" />
+    <MetadataFile FileName="MojServis.disco" MetadataType="Disco" ID="0a6f7e97-03c2-43b3-b7c7-163cbb44f40d" SourceId="1" SourceUrl="http://localhost:54575/MojServis.svc?disco" />
+    <MetadataFile FileName="MojServis1.xsd" MetadataType="Schema" ID="864793ee-df78-46cd-a510-d743ba065557" SourceId="1" SourceUrl="http://localhost:54575/MojServis.svc?xsd=xsd2" />
+    <MetadataFile FileName="MojSerwis.wsdl" MetadataType="Wsdl" ID="efcdac5e-85e4-478d-95bb-be378cfe7ff5" SourceId="1" SourceUrl="http://localhost:54575/MojServis.svc?wsdl" />
+    <MetadataFile FileName="MojServis2.xsd" MetadataType="Schema" ID="3e9b367e-b32a-4aab-b24e-d384f1d3f6d1" SourceId="1" SourceUrl="http://localhost:54575/MojServis.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -11,6 +11,12 @@
         <TextBox Name="txtX" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox Name="txtY" HorizontalAlignment="Left" Height="23" Margin="10,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button Name="btnPolicz" Content="Policz" HorizontalAlignment="Left" Margin="55,66,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBox Name="txtTekst" HorizontalAlignment="Left" Height="23" Margin="10,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Wyślij" HorizontalAlignment="Left" Margin="55,181,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <TextBlock Name="txtWynik" HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ProgressBar Name="pbBar" Minimum="0" Maximum="100" HorizontalAlignment="Left" Height="7" Margin="189,10,0,0" VerticalAlignment="Top" Width="301"/>
+        <Button Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="415,23,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Name="btnStop" Content="Stop" IsEnabled="False" HorizontalAlignment="Left" Margin="415,51,0,0" VerticalAlignment="Top" Width="75" Click="btnStop_Click"/>
 
     </Grid>
 </Window>

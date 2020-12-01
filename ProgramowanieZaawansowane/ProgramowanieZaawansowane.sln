@@ -6,6 +6,11 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgramowanieZaawansowane", "ProgramowanieZaawansowane\ProgramowanieZaawansowane.csproj", "{199E63D0-D7DB-41FF-95DD-4EE30A1642E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{3092206A-FFC0-4938-AAD6-1F9D58D0AAD0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8821A27E-BDB2-4AF9-9697-8294F177EAE1} = {8821A27E-BDB2-4AF9-9697-8294F177EAE1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1.csproj", "{8821A27E-BDB2-4AF9-9697-8294F177EAE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{3092206A-FFC0-4938-AAD6-1F9D58D0AAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3092206A-FFC0-4938-AAD6-1F9D58D0AAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3092206A-FFC0-4938-AAD6-1F9D58D0AAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8821A27E-BDB2-4AF9-9697-8294F177EAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8821A27E-BDB2-4AF9-9697-8294F177EAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8821A27E-BDB2-4AF9-9697-8294F177EAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8821A27E-BDB2-4AF9-9697-8294F177EAE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
