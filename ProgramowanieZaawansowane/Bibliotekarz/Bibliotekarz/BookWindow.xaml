@@ -1,0 +1,63 @@
+﻿<Window x:Class="Bibliotekarz.BookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bibliotekarz"
+        mc:Ignorable="d"
+        Title="Nowa książka" Height="450" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.ColumnSpan="5" Text="Nowa książka" 
+                   FontSize="24" 
+                   Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}" />
+
+        <Label Grid.Column="1" Grid.Row="2" Content="Autor" />
+        <TextBox Grid.Column="3" Grid.Row="2" Text="{Binding EditedBook.Author}" />
+
+        <Label Grid.Column="1" Grid.Row="4" Content="Tytuł" />
+        <TextBox Grid.Column="3" Grid.Row="4" Text="{Binding EditedBook.Title}" />
+
+        <Label Grid.Column="1" Grid.Row="6" Content="Liczba stron" />
+        <TextBox Grid.Column="3" Grid.Row="6" Text="{Binding EditedBook.PageCount}" />
+
+        <Label Grid.Column="1" Grid.Row="8" Content="Czy wypożyczona" />
+        <CheckBox VerticalAlignment="Center" Grid.Column="3" Grid.Row="8" IsChecked="{Binding EditedBook.IsBorrowed}" />
+
+        <Label Grid.Column="1" Grid.Row="10" Content="Imię wypożyczającego" />
+        <TextBox Grid.Column="3" Grid.Row="10" Text="{Binding EditedBook.Borrower.FirstName}" />
+
+        <Label Grid.Column="1" Grid.Row="12" Content="Nazwisko wypożyczającego" />
+        <TextBox Grid.Column="3" Grid.Row="12" Text="{Binding EditedBook.Borrower.LastName}" />
+        <Rectangle Grid.ColumnSpan="5" 
+                   Fill="#FFF4F4F5" 
+                   Grid.Row="14" />
+        <Button Content="_Anuluj" IsCancel="True" Grid.Column="3" HorizontalAlignment="Right" Margin="0,0,5,10" Grid.Row="14" VerticalAlignment="Bottom" Width="75"/>
+        <Button Command="{Binding SaveCommand}" Content="Zapi_sz" Grid.Column="3" HorizontalAlignment="Right" Margin="0,0,85,10" Grid.Row="14" VerticalAlignment="Bottom" Width="75"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotekarz", "Bibliotekarz\Bibliotekarz.csproj", "{09E0BE87-6967-44AD-A8D1-BEFF139E4FC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotekarz.Model", "Bibliotekarz.Model\Bibliotekarz.Model.csproj", "{A5552874-8B18-49EF-8E8F-AE41707027D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09E0BE87-6967-44AD-A8D1-BEFF139E4FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E0BE87-6967-44AD-A8D1-BEFF139E4FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E0BE87-6967-44AD-A8D1-BEFF139E4FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E0BE87-6967-44AD-A8D1-BEFF139E4FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5552874-8B18-49EF-8E8F-AE41707027D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5552874-8B18-49EF-8E8F-AE41707027D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5552874-8B18-49EF-8E8F-AE41707027D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5552874-8B18-49EF-8E8F-AE41707027D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65ADBDA7-1492-4CBA-A7FD-B1BB3221000C}
+	EndGlobalSection
+EndGlobal
