@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bibliotekarz"
         mc:Ignorable="d"
+        DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
         Title="Bibliotekarz" Height="450" Width="800">
     <DockPanel >
         <Menu DockPanel.Dock="Top">
@@ -12,7 +13,7 @@
                 <MenuItem Header="_Otwórz z pliku"/>
                 <MenuItem Header="Zapi_sz do pliku"/>
                 <Separator/>
-                <MenuItem Header="Zam_knij" />
+                <MenuItem Header="Zam_knij" Command="{Binding CloseCommand}"/>
             </MenuItem>
             <MenuItem Header="_Edycja">
                 <MenuItem Header="_Nowy" />
@@ -33,9 +34,19 @@
         <Grid>
             <DataGrid AutoGenerateColumns="False" 
                       IsReadOnly="True"
+                      ItemsSource="{Binding BookList}"
                       Margin="0,0,0,23">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Id}" Header="Id"/>
+                    <DataGridTextColumn Binding="{Binding Author}" Header="Autor" Width="2*"/>
+                    <DataGridTextColumn Binding="{Binding Title}" Header="Tytuł" Width="3*"/>
+                    <DataGridTextColumn Binding="{Binding PageCount}" Header="Liczba stron"/>
+                    <DataGridTextColumn Binding="{Binding IsBorrowed}" Header="Wypożyczona"/>
+                    <DataGridTextColumn Binding="{Binding Borrower.FirstName}" Header="Imię"/>
+                    <DataGridTextColumn Binding="{Binding Borrower.LastName}" Header="Nazwisko"/>
+                </DataGrid.Columns>
             </DataGrid>
-            <TextBox Height="23" 
+            <TextBox Height="23" Text="{Binding FilterText}"
                      VerticalAlignment="Bottom" />
         </Grid>
     </DockPanel>
