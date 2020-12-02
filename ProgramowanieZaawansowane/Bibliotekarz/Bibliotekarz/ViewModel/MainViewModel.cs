@@ -1,4 +1,5 @@
 using Bibliotekarz.Model;
+using Bibliotekarz.Services;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.CommandWpf;
 using System;
@@ -23,10 +24,12 @@ namespace Bibliotekarz.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        private readonly IBookService bookService;
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel()
+        public MainViewModel(IBookService bookService)
         {
             ////if (IsInDesignMode)
             ////{
@@ -42,6 +45,7 @@ namespace Bibliotekarz.ViewModel
             //timer.Elapsed += Timer_Elapsed;
             //timer.Start();
 
+            this.bookService = bookService;
             GenerateFakeData();
         }
 
@@ -67,26 +71,8 @@ namespace Bibliotekarz.ViewModel
 
         private void GenerateFakeData()
         {
-            BookList = new ObservableCollection<Book>
-            {
-                new Book
-                {
-                    Id = 1,
-                    Author = "Leszek Lewandowski",
-                    PageCount = 456,
-                    Title = "Programowanie w C#",
-                    IsBorrowed = true,
-                    Borrower = new Customer
-                    {
-                        Id = 1,
-                        FirstName = "Adam",
-                        LastName = "Nowak"
-                    }
-
-                }
-            };
-
-
+            var lista = bookService.GetAll();
+            BookList = new ObservableCollection<Book>(lista);
         }
     }
 }

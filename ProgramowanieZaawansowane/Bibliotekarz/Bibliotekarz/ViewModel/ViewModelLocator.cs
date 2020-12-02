@@ -12,6 +12,7 @@
   See http://www.galasoft.ch/mvvm
 */
 
+using Autofac;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 
@@ -31,7 +32,7 @@ namespace Bibliotekarz.ViewModel
 
         }
 
-        public MainViewModel Main => new MainViewModel();
+        public MainViewModel Main => IoC.IoCContainer.Cointainer.Resolve<MainViewModel>();
 
         public static void Cleanup()
         {
