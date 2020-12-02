@@ -3,6 +3,7 @@ using Bibliotekarz.Services;
 using Bibliotekarz.ViewModel;
 using Autofac.Extras.DynamicProxy;
 using Bibliotekarz.IoC.Interceptors;
+using Bibliotekarz.Model;
 
 namespace Bibliotekarz.IoC
 {
@@ -23,6 +24,8 @@ namespace Bibliotekarz.IoC
             builder.RegisterType<BookService>().As<IBookService>()
                 .EnableInterfaceInterceptors()
                 .InterceptedBy(typeof(PerformanceLogInterceptor));
+
+            builder.RegisterType<AppDbContext>().AsSelf();
 
             Cointainer = builder.Build();
         }

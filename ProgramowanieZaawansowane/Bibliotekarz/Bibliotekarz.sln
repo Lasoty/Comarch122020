@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotekarz", "Bibliotekar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotekarz.Model", "Bibliotekarz.Model\Bibliotekarz.Model.csproj", "{A5552874-8B18-49EF-8E8F-AE41707027D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotekarz.Tests", "Bibliotekarz.Tests\Bibliotekarz.Tests.csproj", "{DBD0BF79-9833-4ED0-9682-508E6B2A781B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A5552874-8B18-49EF-8E8F-AE41707027D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5552874-8B18-49EF-8E8F-AE41707027D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5552874-8B18-49EF-8E8F-AE41707027D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD0BF79-9833-4ED0-9682-508E6B2A781B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD0BF79-9833-4ED0-9682-508E6B2A781B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD0BF79-9833-4ED0-9682-508E6B2A781B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD0BF79-9833-4ED0-9682-508E6B2A781B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
